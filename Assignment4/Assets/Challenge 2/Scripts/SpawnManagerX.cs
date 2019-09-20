@@ -7,9 +7,8 @@ public class SpawnManagerX : MonoBehaviour
 
         /*
     Warren Guiles
+    SpawnManager
     Assignment 4
-    PlayerControllerX
-
     This script spawns random ball prefabs between random timed intervals.
     Here I added the random number used to  pull a GameObject from the ballprefabs array,
     as well as changing the invoke method to be a coroutine so that I could have it 

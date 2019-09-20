@@ -4,8 +4,8 @@ using UnityEngine;
 
     /*
     Warren Guiles
+    DestroyOutOfBoundsX
     CIS_456_Assignment_4
-
     This script makes sure that objects out of the player's view 
     and/or objects out of bounds are destroyed 
     as to protect performance

@@ -6,9 +6,8 @@ public class PlayerControllerX : MonoBehaviour
 {
     /*
     Warren Guiles
+     PlayerControllerX
     Assignment 4
-    PlayerControllerX
-
     This script lets the player press the space bar in order to spawn a dog.
      Here I added 2 member variables that will keep track
     of the cooldown time between dog spawns
