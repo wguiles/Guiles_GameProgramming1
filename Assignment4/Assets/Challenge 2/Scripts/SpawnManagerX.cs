@@ -4,6 +4,17 @@ using UnityEngine;
 
 public class SpawnManagerX : MonoBehaviour
 {
+
+        /*
+    Warren Guiles
+    Assignment 4
+    PlayerControllerX
+
+    This script spawns random ball prefabs between random timed intervals.
+    Here I added the random number used to  pull a GameObject from the ballprefabs array,
+    as well as changing the invoke method to be a coroutine so that I could have it 
+    wait 3-5 seconds before executing again
+     */
     public GameObject[] ballPrefabs;
 
     private float spawnLimitXLeft = -22;
@@ -35,10 +46,14 @@ public class SpawnManagerX : MonoBehaviour
 
     IEnumerator SpawnRandomBallCoroutine()
     {
+        //once the coroutine starts, this repeats forever
         while(true)
         {
+            //wait a random number of seconds 
             int RandomWaitTime = Random.Range(3,6);
             yield return new WaitForSeconds(RandomWaitTime);
+
+            //spawn a random ball
             SpawnRandomBall();
         }
     }
