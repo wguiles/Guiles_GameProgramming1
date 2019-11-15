@@ -49,7 +49,7 @@ public class CollectibleSpawnManager : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             //grab the last object in the multicolorCollectibles list
-                GameObject itemToPaint = multicolorCollectibles[multicolorCollectibles.Count - 1d];
+                GameObject itemToPaint = multicolorCollectibles[multicolorCollectibles.Count - 1];
                 GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
 
             //create a position that randomly branches out from 5 units in front of the player
